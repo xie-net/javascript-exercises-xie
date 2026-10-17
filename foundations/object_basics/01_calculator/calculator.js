@@ -29,8 +29,12 @@ const power = function(num, power) {
   return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let result = 1;
+	for (let i = number; i >= 1; --i) {
+    result *= i;
+  };
+  return result;
 };
 
 // Do not edit below this line
