@@ -16,8 +16,12 @@ const sum = function(arr) {
   return result;
 };
 
-const multiply = function() {
-  
+const multiply = function(arr) {
+  let result = arr.reduce((total, current) => {
+    total = current * total;
+    return total;
+  }, 1);
+  return result;
 };
 
 const power = function() {
